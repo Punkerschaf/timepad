@@ -16,5 +16,11 @@ This variables can be used in OSC commands for Clock-8001:
 'timesecs' for countdown from time (seconds)
 
 ## Companion config
-
+- *Generic OSC* device for timepad (127.0.0.1 : 12322)
+- two custom variables 'timestring' and 'timesecs'
+    Names should not be changed unless you have to change it in the code
+- custom variables for numpad entry, for e.g. 'numpad'
+- numpad buttons append a character to numpad-variable
+- a clear button deletes the current content of numpad variable
+- a set button sends the numpad variable as string to timepad with OSC-path '/timepad/numpad'
 ## Time inputs
